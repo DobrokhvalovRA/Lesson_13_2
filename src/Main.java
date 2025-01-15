@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void checkPhone(ArrayList phoneNumbers) throws NameExeption {
-            if (phoneNumbers == null) throw new NameExeption("не найден!");
+        if (phoneNumbers == null) throw new NameExeption("не найден!");
     }
-
 
 
     public static void main(String[] args) {
@@ -24,7 +23,7 @@ public class Main {
         Scanner console = new Scanner(System.in);
         String checkName = console.nextLine();
 
-        //Проыеряем фамилию и вывобим номер
+        //Проыеряем фамилию и выводим номер
         try {
             checkPhone(phoneBook.getPhoneNumber(checkName));
             System.out.println("Абонент " + checkName + " имеет следующий телефонный номер: " + phoneBook.getPhoneNumber(checkName));
