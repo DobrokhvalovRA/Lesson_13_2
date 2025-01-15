@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class PhoneBook {
     private HashMap<String, ArrayList<String>> person = new HashMap<>();
 
-    public void setPerson(String name, String phoneNumber) {
+    public void addPerson(String name, String phoneNumber) {
         if (this.person.containsKey(name)) {
             getPhoneNumber(name).add(phoneNumber);
         } else {
